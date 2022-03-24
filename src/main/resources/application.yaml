@@ -1,0 +1,22 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    url: jdbc:postgresql://:5432/wishes
+    username: postgres
+    password: beyzanur
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show_sql: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        globally_quoted_identifiers: true
+        jdbc:
+          lob:
+            non-contextual-creation: true
+
